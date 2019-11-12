@@ -1,2 +1,2 @@
-DROP DATABASE IF EXISTS burgertime_db;
-CREATE DATABASE burgertime_db;
+DROP DATABASE IF EXISTS books;
+CREATE DATABASE books;
