@@ -26,7 +26,6 @@ router.post("/", (req, res) => {
 // Matches with "/api/books/:id"
 router.get("/:id", (req, res) => {
   const { id } = req.params;
-
   db.Book.findOne({ where: { bookid: id } })
     .then(results => res.json(results))
     .catch(err => res.status(500).send(err.message));
